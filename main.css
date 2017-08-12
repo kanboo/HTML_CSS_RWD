@@ -24,20 +24,18 @@
     display: inline-block;
 }
 
-
-@media (max-width: 768px){
-	.logo {
+@media (max-width: 768px) {
+    .logo {
         padding-left: 25px;
     }
 }
-
 
 .muen {
     float: right;
 }
 
-@media (max-width: 768px){
-	.muen {
+@media (max-width: 768px) {
+    .muen {
         padding-right: 5px;
     }
 }
@@ -45,6 +43,12 @@
 .header li {
     float: left;
     margin: 20px;
+}
+
+@media (max-width: 414px) {
+    .header li {
+        margin-left: 0;
+    }
 }
 
 .header a {
@@ -61,6 +65,7 @@
     border-bottom: 4px solid #e44d26;
 }
 
+
 /* content */
 
 .content {
@@ -72,8 +77,8 @@
     position: relative
 }
 
-@media (max-width: 768px){
-	.content {
+@media (max-width: 768px) {
+    .content {
         margin: 0 25px;
     }
 }
@@ -97,9 +102,16 @@
     margin: 0 1%;
 }
 
-@media (max-width: 768px){
-	.column_3 {
+@media (max-width: 768px) {
+    .column_3 {
         margin: 0 25px;
+    }
+}
+
+@media (max-width: 414px) {
+    .column_3>div {
+        width: 98%;
+        margin: 0 1%;
     }
 }
 
@@ -122,8 +134,8 @@ table {
     width: 95%;
 }
 
-@media (max-width: 768px){
-	table {
+@media (max-width: 768px) {
+    table {
         width: 90%;
     }
 }
@@ -158,8 +170,8 @@ td {
     background-color: rgba(33, 162, 97, 0.98);
 }
 
-@media (max-width: 768px){
-	.form {
+@media (max-width: 768px) {
+    .form {
         margin: 0 25px;
     }
 }
@@ -181,6 +193,24 @@ td {
     width: 50%;
     padding-left: 3%;
     padding-right: 10%;
+}
+
+@media (max-width: 414px) {
+    .form {
+        height: 500px;
+    }
+    .opinion {
+        float: none;
+        width: 90%;
+        padding-left: 15%;
+        /* padding-right: 5%; */
+    }
+    .PData {
+        float: none;
+        width: 90%;
+        padding-left: 15%;
+        /* padding-right: 5%; */
+    }
 }
 
 
@@ -226,15 +256,37 @@ textarea {
     margin: 0 15px;
 }
 
-@media (max-width: 768px){
-	.footer {
+@media (max-width: 768px) {
+    .footer {
         margin: 0 25px;
+    }
+}
+
+@media (max-width: 414px) {
+    .footer .logo {
+        padding-left: 5px;
+    }
+    .footer .logo img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 320px) {
+.footer .logo {
+        display: none;
     }
 }
 
 .contact {
     float: right;
     margin: 0 15px;
+}
+
+@media (max-width: 414px) {
+    .contact {
+        float: right;
+        margin: 0 5px;
+    }
 }
 
 .contact li {
